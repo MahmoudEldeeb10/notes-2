@@ -10,9 +10,12 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
+      theme: ThemeData.dark(),
+
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('notes'),
+          title: const Text('Notes'),
           actions: [
             IconButton(
               icon: const Icon(Icons.search),
