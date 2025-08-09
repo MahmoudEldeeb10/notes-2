@@ -25,7 +25,28 @@ class MyApp extends StatelessWidget {
             ),
           ],
         ),
-        // body: const Center(child: Text('Hello, world!')),
+        body: Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: Column(
+            
+            children: [
+              Container(
+                color: Colors.blue,
+                child: ListTile(
+                  // leading: const Icon(Icons.note),
+                  title: const Text('Note 1'),
+                  subtitle: const Text('This is the first note.'),
+                  trailing: IconButton(
+                    icon: const Icon(Icons.delete),
+                    onPressed: () {
+                      // Action to perform when the delete button is pressed
+                    },
+                  ),
+                ),
+              ),
+            ],
+          ),
+        ),
       ),
     );
   }
